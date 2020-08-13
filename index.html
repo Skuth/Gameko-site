@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ptBr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gameko</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  
+  <nav class="navigation">
+    <div class="left">
+      <h1 onclick="scrollWindow('top')"><img src="./assets/images/logo.png" alt="Logo do Gameko" class="logo"></h1>
+      <ul>
+        <li><a onclick="scrollWindow('info')">Sobre</a></li>
+        <li><a onclick="scrollWindow('commands')">Comandos</a></li>
+      </ul>
+    </div>
+    <div class="right">
+      <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <img src="./assets/images/logo.png" alt="Logo do Gameko" class="logo">
+    <div class="info">
+      <h2>Que tal ficar sabendo dos jogos que estão grátis?</h2>
+      <span>Me adiciona no seu discord e eu te aviso sempre que tiver!</span>
+    </div>
+    <div class="btn-container center">
+      <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn btn-md" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
+      <a onclick="scrollWindow('commands')" class="btn btn-md btn-black">Ver comandos</a>
+    </div>
+  </header>
+
+  <section class="bot-info" id="info">
+    <div class="bot-info-box">
+      <div class="bot-info-text">
+        <p class="title">Veja os jogos grátis na Epic Games</p>
+        <p>Com o Gameko, você pode ver de maneira rápida e fácil os jogos que estão gratuitos na Epic Games, e em breve em outras plataformas!</p>
+      </div>
+      <div class="bot-info-img">
+        <img src="./assets/images/1.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="bot-info-box reverse">
+      <div class="bot-info-text">
+        <p class="title">Receba atualizações automáticas</p>
+        <p>você pode criar um canal em seu Discord incluindo <span class="bot-info-text-name">Gameko-Avisos</span> para receber notificações automáticas!</p>
+      </div>
+      <div class="bot-info-img">
+        <img src="./assets/images/2.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="bot-commands" id="commands">
+    <div class="bot-command-container">
+      <div class="bot-command-box">
+        <span>!gameko-epic</span>
+        <p>Use para listar os jogos grátis da Epic Games &#x1F3AE;</p>
+      </div>
+  
+      <div class="bot-command-box">
+        <span>!gameko-avisos</span>
+        <p>Use para ativar ou desativar os avisos de jogos gratuitos &#x1F514;</p>
+      </div>
+  
+      <div class="bot-command-box">
+        <span>!gameko-convite</span>
+        <p>Use para ver meu link de convite	&#x1F517;</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bot-button">
+    <span>Me adicione no seu discord!</span>
+    <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
+  </section>
+
+  <footer class="footer">
+    <p>Criado por <span>SKUTH</span></p>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
