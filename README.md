@@ -14,5 +14,5 @@
 
   ### Sala para avisos
 
-  - Criar uma sala que inclua ``Gameko-avisos`` no nome.
+  - Criar uma sala que inclua ``Gameko`` no nome.
   - Prontinho, seu servidor já está pronto para receber avisos automáticos!
