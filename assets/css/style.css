@@ -201,7 +201,11 @@ html {
   }
 }
 .header {
-  background: linear-gradient(45deg, #C31432, #240B36);
+  background: #C31432;
+  background: -moz-linear-gradient(45deg, #C31432 0%, #240B36 100%);
+  background: -webkit-linear-gradient(45deg, #C31432 0%, #240B36 100%);
+  background: linear-gradient(45deg, #C31432 0%, #240B36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C31432",endColorstr="#240B36",GradientType=1);
   padding-top: 200px;
   padding-bottom: 300px;
   position: relative;
@@ -210,6 +214,7 @@ html {
 .header > #wave {
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 .header > #wave path {
   fill: #ffffff;
@@ -258,6 +263,10 @@ html {
   margin-top: 40px;
   position: relative;
   z-index: 5;
+}
+.header .content .right {
+  width: 100%;
+  max-width: 350px;
 }
 .header .content .right #header-card {
   width: 100%;
@@ -369,7 +378,11 @@ html {
 }
 
 .bot-button {
-  background: linear-gradient(-145deg, #C31432, #240B36);
+  background: #C31432;
+  background: -moz-linear-gradient(-145deg, #C31432 0%, #240B36 100%);
+  background: -webkit-linear-gradient(-145deg, #C31432 0%, #240B36 100%);
+  background: linear-gradient(-145deg, #C31432 0%, #240B36 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#C31432",endColorstr="#240B36",GradientType=1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,6 +400,7 @@ html {
 .bot-button > #wave {
   position: absolute;
   top: 0;
+  width: 100%;
 }
 .bot-button > #wave path {
   fill: #ffffff;
