@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="ptBr">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="canonical" href="https://skuth.github.io/Gameko-site/">
 
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
@@ -14,6 +16,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <meta name="description" content="Gameko, o bot que te avisa quando sai joguinho novo gratuito">
+  <meta name="keywords" content="gameko, discord, bot, discord bot, free epicgames, epicgames, epicgames jogos gratis, jogos gratis, pc, steam, origin, uplay, jogos gratis pc">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="Portuguese">
+  <meta name="generator" content="N/A">
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="https://skuth.github.io/Gameko-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gameko - Um bot receber jogos gratuitos">
+  <meta property="og:description" content="Gameko, o bot que te avisa quando sai joguinho novo gratuito">
+  <meta property="og:image" content="https://skuth.github.io/Gameko-site/assets/images/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gameko - Um bot receber jogos gratuitos">
+  <meta name="twitter:description" content="Gameko, o bot que te avisa quando sai joguinho novo gratuito">
+  <meta name="twitter:image" content="https://skuth.github.io/Gameko-site/assets/images/logo.png">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175298843-1"></script>
@@ -30,27 +51,38 @@
   
   <nav class="navigation">
     <div class="left">
-      <h1 onclick="scrollWindow('top')"><img src="./assets/images/logo.png" alt="Logo do Gameko" class="logo"></h1>
+      <h1><img src="./assets/images/logo.png" alt="Logo do Gameko" class="logo"></h1>
+    </div>
+    <div class="right">
       <ul>
         <li><a onclick="scrollWindow('info')">Sobre</a></li>
         <li><a onclick="scrollWindow('commands')">Comandos</a></li>
       </ul>
-    </div>
-    <div class="right">
       <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
     </div>
   </nav>
 
   <header class="header">
-    <img src="./assets/images/logo.png" alt="Logo do Gameko" class="logo">
-    <div class="info">
-      <h2>Que tal ficar sabendo dos jogos que estão grátis?</h2>
-      <span>Me adiciona no seu discord e eu te aviso sempre que tiver!</span>
+    <div class="content">
+      <div class="left">
+        <div class="info">
+          <h2>Que tal ficar sabendo dos jogos que estão grátis?</h2>
+          <span>Me adiciona no seu discord e eu te aviso sempre que tiver!</span>
+        
+          <div class="btn-container">
+            <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn btn-md" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
+            <a onclick="scrollWindow('commands')" class="btn btn-md btn-invert">Ver comandos</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="right">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 371 354" id="header-card"><defs><style>#header-card .a{fill:#fff;}#header-card .b{fill:#464646;}#header-card .c{fill:#d2d2d2;}#header-card .d{fill:#72a6e9;}</style></defs><rect class="a" width="371" height="354" rx="10"/><circle class="b" cx="42.5" cy="42.5" r="42.5" transform="translate(28 20)"/><rect class="b" width="89" height="17" rx="8.5" transform="translate(125 34)"/><rect class="c" width="231" height="11" rx="5.5" transform="translate(127 74)"/><rect class="c" width="330" height="11" rx="5.5" transform="translate(28 120)"/><rect class="c" width="198" height="11" rx="5.5" transform="translate(30 205)"/><rect class="c" width="224" height="11" rx="5.5" transform="translate(30 226)"/><rect class="c" width="146" height="11" rx="5.5" transform="translate(30 247)"/><rect class="c" width="212" height="11" rx="5.5" transform="translate(30 287)"/><rect class="c" width="330" height="11" rx="5.5" transform="translate(30 154)"/><rect class="d" width="37" height="17" rx="8.5" transform="translate(223 34)"/><rect class="c" width="74" height="92" rx="10" transform="translate(284 200)"/></svg>
+      </div>
     </div>
-    <div class="btn-container center">
-      <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn btn-md" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
-      <a onclick="scrollWindow('commands')" class="btn btn-md btn-black">Ver comandos</a>
-    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="wave"><path fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,197.3C384,192,480,128,576,128C672,128,768,192,864,218.7C960,245,1056,235,1152,218.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  
   </header>
 
   <section class="bot-info" id="info">
@@ -60,7 +92,7 @@
         <p>Com o Gameko, você pode ver de maneira rápida e fácil os jogos que estão gratuitos na Epic Games, e em breve em outras plataformas!</p>
       </div>
       <div class="bot-info-img">
-        <img src="./assets/images/1.jpg" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"viewBox="0 0 554 598" id="user-card"><defs><style>#user-card .a{fill:#464646;}#user-card .b{fill:url(#a);}#user-card .c,#user-card .e,#user-card .h,#user-card .k{fill:#fff;}#user-card .c,#user-card .l,#user-card .m{font-size:14px;}#user-card .c,#user-card .e,#user-card .j,#user-card .l{font-family:Quicksand-Regular, Quicksand;}#user-card .d,#user-card .i,#user-card .j{fill:#72a6e9;}#user-card .e{font-size:10px;}#user-card .f{fill:#3e3d3d;}#user-card .g{fill:#e23232;}#user-card .h{font-size:12px;}#user-card .h,#user-card .i,#user-card .m{font-family:Quicksand-Bold, Quicksand;font-weight:700;}#user-card .i,#user-card .j{font-size:18px;}#user-card .l,#user-card .m{fill:#d2d2d2;}</style><pattern id="a" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 320 320"><image width="320" height="320" xlink:href="./assets/images/logo.png"/></pattern></defs><g transform="translate(-2655 -730)"><rect class="a" width="554" height="598" rx="10" transform="translate(2655 730)"/><circle class="b" cx="24" cy="24" r="24" transform="translate(2689 753)"/><text class="c" transform="translate(2748 781)"><tspan x="0" y="0">Gameko</tspan></text><rect class="d" width="33" height="16" rx="4" transform="translate(2806 769)"/><text class="e" transform="translate(2813 781)"><tspan x="0" y="0">BOT</tspan></text><g transform="translate(2688.667 861)"><rect class="f" width="486" height="444" rx="4" transform="translate(0.333)"/><path class="g" d="M4,0H6A0,0,0,0,1,6,0V444a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(0.333)"/></g><g transform="translate(2713.667 875)"><circle class="b" cx="20.5" cy="20.5" r="20.5" transform="translate(0.333)"/><text class="h" transform="translate(51.333 25)"><tspan x="0" y="0">Gameko</tspan></text></g><text class="i" transform="translate(2714 942)"><tspan x="0" y="0">1 - Random Game</tspan></text><text class="j" transform="translate(2689 835)"><tspan x="0" y="0">@user</tspan><tspan class="k" y="0">, Olha essa listinha de jogos grátis</tspan></text><text class="l" transform="translate(2714 969)"><tspan x="0" y="0">Random game description</tspan></text><text class="m" transform="translate(2714 995)"><tspan x="0" y="0">Preço original</tspan></text><text class="l" transform="translate(2714 1021)"><tspan x="0" y="0">R$ 10,00</tspan></text><rect class="a" width="96" height="124" rx="10" transform="translate(3057 875)"/><rect class="a" width="439" height="209" rx="10" transform="translate(2714 1050)"/><text class="l" transform="translate(2714 1288)"><tspan x="0" y="0">Jogo grátis até dia 01/01/2021 | 12:00</tspan></text></g></svg>
       </div>
     </div>
 
@@ -70,7 +102,7 @@
         <p>você pode criar um canal em seu Discord incluindo <span class="bot-info-text-name">Gameko</span> no nome para receber atualizações automáticas!</p>
       </div>
       <div class="bot-info-img">
-        <img src="./assets/images/2.jpg" alt="">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 554 598" id="bot-card"><defs><style>#bot-card .a{fill:#464646;}#bot-card .b{fill:url(#a);}#bot-card .c,#bot-card .e,#bot-card .h,#bot-card .k{fill:#fff;}#bot-card .c,#bot-card .l,#bot-card .m{font-size:14px;}#bot-card .c,#bot-card .e,#bot-card .k,#bot-card .l{font-family:Quicksand-Regular, Quicksand;}#bot-card .d,#bot-card .i{fill:#72a6e9;}#bot-card .e{font-size:10px;}#bot-card .f{fill:#3e3d3d;}#bot-card .g{fill:#e23232;}#bot-card .h{font-size:12px;}#bot-card .h,#bot-card .i,#bot-card .j,#bot-card .m{font-family:Quicksand-Bold, Quicksand;font-weight:700;}#bot-card .i,#bot-card .j{font-size:18px;}#bot-card .j{fill:#c31432;}#bot-card .k{font-weight:400;}#bot-card .l,#bot-card .m{fill:#d2d2d2;}</style><pattern id="a" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 320 320"><image width="320" height="320" xlink:href="./assets/images/logo.png"/></pattern></defs><g transform="translate(-2655 -730)"><rect class="a" width="554" height="598" rx="10" transform="translate(2655 730)"/><circle class="b" cx="24" cy="24" r="24" transform="translate(2689 753)"/><text class="c" transform="translate(2748 781)"><tspan x="0" y="0">Gameko</tspan></text><rect class="d" width="33" height="16" rx="4" transform="translate(2806 769)"/><text class="e" transform="translate(2813 781)"><tspan x="0" y="0">BOT</tspan></text><g transform="translate(2688.667 861)"><rect class="f" width="486" height="444" rx="4" transform="translate(0.333)"/><path class="g" d="M4,0H6A0,0,0,0,1,6,0V444a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(0.333)"/></g><g transform="translate(2713.667 875)"><circle class="b" cx="20.5" cy="20.5" r="20.5" transform="translate(0.333)"/><text class="h" transform="translate(51.333 25)"><tspan x="0" y="0">Gameko</tspan></text></g><text class="i" transform="translate(2714 942)"><tspan x="0" y="0">1 - Random Game</tspan></text><text class="j" transform="translate(2689 835)"><tspan x="0" y="0">@Gameko Avisos</tspan><tspan class="k" y="0">, Olha os joguinhos gratuitos</tspan></text><text class="l" transform="translate(2714 969)"><tspan x="0" y="0">Random game description</tspan></text><text class="m" transform="translate(2714 995)"><tspan x="0" y="0">Preço original</tspan></text><text class="l" transform="translate(2714 1021)"><tspan x="0" y="0">R$ 10,00</tspan></text><rect class="a" width="96" height="124" rx="10" transform="translate(3057 875)"/><rect class="a" width="439" height="209" rx="10" transform="translate(2714 1050)"/><text class="l" transform="translate(2714 1288)"><tspan x="0" y="0">Jogo grátis até dia 01/01/2021 | 12:00</tspan></text></g></svg>
       </div>
     </div>
   </section>
@@ -100,6 +132,7 @@
   </section>
 
   <section class="bot-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="wave"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,170.7C480,160,600,96,720,106.7C840,117,960,203,1080,208C1200,213,1320,139,1380,101.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     <span>Me adicione no seu discord!</span>
     <a href="https://discord.com/oauth2/authorize?client_id=738204726218194964&permissions=268552256&scope=bot" class="btn" target="_blank"><i class="fab fa-discord mr"></i> Adicionar ao Discord</a>
   </section>
