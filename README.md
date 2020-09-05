@@ -6,9 +6,9 @@
 
 | Comando | Função |
 | ------- | ------ |
-| ``!gameko-epic`` | Use para listar os jogos grátis da Epic Games 🎮 |
-| ``!gameko-avisos`` | Use para ativar ou desativar os avisos de jogos gratuitos 🔔 |
-| ``!gameko-convite`` | Use para ver meu link de convite 🔗 |
+| ``!g-epic`` | Use para listar os jogos grátis da Epic Games 🎮 |
+| ``!g-avisos`` | Use para ativar ou desativar os avisos de jogos gratuitos 🔔 |
+| ``!g-convite`` | Use para ver meu link de convite 🔗 |
 
 ## Configuração
 
