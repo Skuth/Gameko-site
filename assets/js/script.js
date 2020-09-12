@@ -1,8 +1,52 @@
 const $ = document.querySelector.bind(document)
 
+var scrollOffset
+var items
+
 var preloader = $("#preloader")
+var body = $("body")
+
+body.style.overflow = "hidden"
 
 window.addEventListener("load", () => {
+  window.scrollTo(0, 0)
+  updateData()
+  windowVerify()
+  onPageLoaded()
+})
+
+const windowVerify = () => {
+  var width = window.innerWidth
+
+  if (width >= 1024) {
+    cardAnimation()
+    updateItems()
+  } else {
+    items.forEach(item => {
+      item.classList.remove("hidden")
+    })
+  }
+}
+
+const updateData = () => {
+  let nav = $(".navigation").offsetHeight
+
+  if (window.innerWidth <= 610) {
+    nav = 100
+  }
+
+  scrollOffset = {
+    "info": $("#info").offsetTop - nav,
+    "commands": $("#commands").offsetTop - nav
+  }
+
+  items = [
+    $("#info"),
+    $("#commands"),
+  ]
+}
+
+const onPageLoaded = () => {
   setTimeout(() => {
     preloader.classList.add("hidden")
 
@@ -10,30 +54,29 @@ window.addEventListener("load", () => {
       let body = $("body")
       body.removeChild(preloader)
     }, 400)
+
+    body.style.overflow = "initial"
   }, 2000)
-  
-  var width = window.innerWidth
+}
 
-  if (width >= 1024) {
-    cardAnimation()
-  }
- })
+const updateItems = () => {
+  setTimeout(() => {
+    window.addEventListener("scroll", e => {
+      showItems(window.scrollY)
+    })
+  }, 1000)
+}
 
-
-var scrollOffset
-
-window.addEventListener("load", () => {
-  let nav = $(".navigation").offsetHeight
-
-  if (window.innerWidth <= 610) {
-    nav = 0
-  }
-
-  scrollOffset = {
-    "info": $("#info").offsetTop - nav,
-    "commands": $("#commands").offsetTop - nav
-  }
-})
+const showItems = (scrollY) => {
+  items.forEach(item => {
+    if (scrollY >= scrollOffset[item.getAttribute("id")] - 200) {
+      if (item.classList.contains("hidden")) {
+        item.classList.remove("hidden")
+        item.classList.add("show")
+      }
+    }
+  })
+}
 
 const scrollWindow = (offset) => {
   switch (offset) {
